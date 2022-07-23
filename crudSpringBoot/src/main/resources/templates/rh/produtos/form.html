@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Sistema de Gestão de Produtos</title>
+
+
+        
+
+</head>
+<body>
+	
+	<div class="container my-2">
+	
+			<h1>Sistema de Gestao de Produtos</h1>
+			<hr>			
+			<h2>Editar Produto</h2>
+		<form action="#" th:action="@{/rh/produtos/salvar}" th:object="${produto}" method="POST">
+			<input type="hidden" id="id" th:field="*{id}">			
+			<input type="text" th:field="*{nome}" placeholder="Nome" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{preco}" placeholder="Preco" class="form-control mb-4 col-4">     		   		
+      		<input type="text" th:field="*{quantidade}" placeholder="Quantidade" class="form-control mb-4 col-4">			
+      		
+			
+						
+			<button type="submit" class="btn btn-info col-2">Salvar</button>
+		</form>
+		<hr>
+		<a th:href="@{/rh/produtos}">Retornar para a lista de produtos</a>
+	</div>
+</body>
+</html>
