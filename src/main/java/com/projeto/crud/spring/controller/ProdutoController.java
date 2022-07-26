@@ -1,4 +1,4 @@
-package com.projeto.crud.senai.controller;
+package com.projeto.crud.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.projeto.crud.senai.model.Produto;
-import com.projeto.crud.senai.repository.ProdutoRepositorio;
+import com.projeto.crud.spring.model.Produto;
+import com.projeto.crud.spring.repository.ProdutoRepositorio;
 
 
 @Controller

@@ -1,4 +1,4 @@
-package com.projeto.crud.senai.model;
+package com.projeto.crud.spring.model;
 
 import java.math.BigDecimal;
 import java.util.Objects;
