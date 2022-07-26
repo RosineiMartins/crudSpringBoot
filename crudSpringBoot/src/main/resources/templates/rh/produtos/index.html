@@ -18,7 +18,7 @@
 				<tr>
 					<th>Nome</th>
 					<th>Preco</th>										
-					<th>Quantidade</th>				
+					<th>Quantidade</th>	
 					<th>Ações</th>
 				</tr>
 			</thead>
@@ -26,12 +26,11 @@
 				<tr th:each="produto : ${listaProdutos}">
 					<td th:text="${produto.nome}"></td>
 					<td th:text="${produto.preco}"></td>
-					<td th:text="${produto.quantidade}">
-					</td>
+					<td th:text="${produto.quantidade}"></td>
 					
 					<td>
 						<a th:href="@{/rh/produtos/{id}(id=${produto.id})}" class="btn btn-primary">Alterar</a>
-						<a th:href="@{/rh/produtos/excluir/{id}(id=${produto.id})}" class="btn btn-danger">Excluir</a>	
+						<a th:href="@{/rh/produtos/excluir/{id}(id=${produto.id})}" class="btn btn-danger">Excluir</a>
 					</td>
 				</tr>
 			</tbody>

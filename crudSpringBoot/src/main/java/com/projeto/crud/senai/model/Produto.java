@@ -15,7 +15,7 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;	
 	private String nome;
-	private int quantidade;
+	private Integer quantidade;
 	private BigDecimal preco;
 	
 	
@@ -65,10 +65,10 @@ public class Produto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getQuantidade() {
+	public Integer getQuantidade() {
 		return quantidade;
 	}
-	public void setQuantidade(int quantidade) {
+	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
 	public BigDecimal getPreco() {
